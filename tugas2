@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int soto = 15000, rawon = 20000;
+    int pilih, jml, total = 0;
+    char lagi = 'y';
+
+    while (lagi == 'y') {
+        cout << "1. Soto 15000\n2. Rawon 20000\n";
+        cout << "Pilih: ";
+        cin >> pilih;
+        cout << "Jumlah: ";
+        cin >> jml;
+
+        if (pilih == 1) total = total + soto * jml;
+        else if (pilih == 2) total = total + rawon * jml;
+        else cout << "Menu salah\n";
+
+        cout << "Tambah lagi (y/n)? ";
+        cin >> lagi;
+    }
+
+    cout << "Total: " << total << endl;
+    return 0;
+}
