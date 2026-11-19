@@ -1,0 +1,18 @@
+ #include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    char huruf;
+
+    cout << "Nilai: ";
+    cin >> n;
+
+    if (n > 90) huruf = 'A';
+    else if (n > 80) huruf = 'B';
+    else if (n > 70) huruf = 'C';
+    else huruf = 'D';
+
+    cout << "Nilai kamu " << n << ", grade " << huruf << endl;
+    return 0;
+}
